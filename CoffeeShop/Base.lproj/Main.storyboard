@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="customersCounter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sue-U0-Y6k">
+                                <rect key="frame" x="125.66666666666667" y="453.66666666666669" width="141.66666666666663" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="revenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em0-eZ-pGr">
+                                <rect key="frame" x="166" y="479" width="61" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To2-D6-7xW">
+                                <rect key="frame" x="20" y="763" width="170" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="dollarsign" catalog="system" title="Купить кофе">
+                                    <color key="baseForegroundColor" red="0.95769142039999999" green="0.5487436188" blue="0.0067203761420000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buyCoffee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKt-6Z-UCM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Std-qF-mvj">
+                                <rect key="frame" x="158" y="763" width="215" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sunrise" catalog="system" title="Начать  новый день">
+                                    <color key="baseForegroundColor" red="0.95769142039999999" green="0.61803494960000005" blue="0.019336079799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startNewDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQM-aa-8Ct"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Цена" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wer-Jy-VQi">
+                                <rect key="frame" x="20" y="696" width="57" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-rf-RDm">
+                                <rect key="frame" x="181.66666666666666" y="428.66666666666669" width="29.666666666666657" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalRevenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7p-5O-o19">
+                                <rect key="frame" x="146.66666666666666" y="504.33333333333326" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-66-3Rq">
+                                <rect key="frame" x="81" y="695" width="44" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sue-U0-Y6k" firstAttribute="centerX" secondItem="lhh-rf-RDm" secondAttribute="centerX" id="73l-TR-feZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Std-qF-mvj" secondAttribute="bottom" constant="20" id="Cmo-t3-088"/>
+                            <constraint firstItem="Em0-eZ-pGr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MFI-T4-Ncj"/>
+                            <constraint firstItem="sue-U0-Y6k" firstAttribute="top" secondItem="lhh-rf-RDm" secondAttribute="bottom" constant="5" id="OCV-zW-3MJ"/>
+                            <constraint firstItem="Em0-eZ-pGr" firstAttribute="top" secondItem="sue-U0-Y6k" secondAttribute="bottom" constant="5" id="Rx6-U1-RoK"/>
+                            <constraint firstItem="b7p-5O-o19" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uu8-6p-pVF"/>
+                            <constraint firstItem="7GI-66-3Rq" firstAttribute="leading" secondItem="wer-Jy-VQi" secondAttribute="trailing" constant="20" id="WQb-F6-TeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="To2-D6-7xW" secondAttribute="bottom" constant="20" id="XIG-ed-nsn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Std-qF-mvj" secondAttribute="trailing" constant="20" id="fNR-T0-mfM"/>
+                            <constraint firstItem="To2-D6-7xW" firstAttribute="top" secondItem="wer-Jy-VQi" secondAttribute="bottom" constant="34" id="h18-b7-BHU"/>
+                            <constraint firstItem="b7p-5O-o19" firstAttribute="top" secondItem="Em0-eZ-pGr" secondAttribute="bottom" constant="5" id="jKy-HZ-nyh"/>
+                            <constraint firstItem="lhh-rf-RDm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="liA-2R-OAI"/>
+                            <constraint firstItem="To2-D6-7xW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nOB-pO-ZmO"/>
+                            <constraint firstItem="wer-Jy-VQi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nyo-iI-NTn"/>
+                            <constraint firstItem="To2-D6-7xW" firstAttribute="top" secondItem="7GI-66-3Rq" secondAttribute="bottom" constant="34" id="sPH-Kv-Wmu"/>
+                            <constraint firstItem="sue-U0-Y6k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xQm-R0-Lqg"/>
+                            <constraint firstItem="lhh-rf-RDm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yZe-7n-0X0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customersLabel" destination="sue-U0-Y6k" id="Arf-vE-cOb"/>
+                        <outlet property="dayLabel" destination="lhh-rf-RDm" id="gl2-SY-GM8"/>
+                        <outlet property="priceField" destination="7GI-66-3Rq" id="z28-L2-ZPV"/>
+                        <outlet property="revenueLabel" destination="Em0-eZ-pGr" id="VdM-v4-vCH"/>
+                        <outlet property="totalRevenueLabel" destination="b7p-5O-o19" id="tun-2H-pfY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign" catalog="system" width="89" height="128"/>
+        <image name="sunrise" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
